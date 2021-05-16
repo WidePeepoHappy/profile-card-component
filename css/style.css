@@ -31,6 +31,8 @@ body {
   height: 375px;
   border-radius: 15px;
   overflow: hidden;
+  -webkit-box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
+          box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
 }
 
 .card__header {
