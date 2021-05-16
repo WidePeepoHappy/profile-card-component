@@ -40,7 +40,7 @@ This is a solution to the [Profile card component challenge on Frontend Mentor](
 
 ### What I learned
 
-Learned how to use position:absolute, to center an image between two blocks:
+Learned how to use position absolute, to center an image between two blocks:
 
 ```scss
 &__header {
