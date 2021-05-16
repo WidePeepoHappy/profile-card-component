@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: url(/images/bg-pattern-top.svg) left -59% top 200% no-repeat, url(/images/bg-pattern-bottom.svg) right -57% bottom 235% no-repeat, #19a2ae;
+  background-size: 68%;
+}
+
+@media (max-width: 420px) {
+  body {
+    background: url(/images/bg-pattern-top.svg) left 170% top -400% no-repeat, url(/images/bg-pattern-bottom.svg) right 170% bottom -390% no-repeat, #19a2ae;
+    background-size: 160%;
+  }
+}
+
+.card {
+  width: 350px;
+  height: 375px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.card__header {
+  background-image: url(/images/bg-pattern-card.svg);
+  position: relative;
+  height: 140px;
+}
+
+.card__header img {
+  position: absolute;
+  top: 60%;
+  left: 35%;
+  border: 5px solid white;
+  border-radius: 50%;
+}
+
+.card__section {
+  background: white;
+  padding: 70px 0 20px;
+  text-align: center;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.card__section--name {
+  font-weight: 700;
+}
+
+.card__section--age {
+  font-weight: 400;
+  color: #969696;
+}
+
+.card__section--city {
+  color: #969696;
+  font-size: 0.9em;
+  margin: 10px 0;
+}
+
+.card__footer {
+  background-color: white;
+}
+
+.card__footer--stats {
+  margin: 0;
+  padding: 27.5px;
+  list-style: none;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__footer--stats li span {
+  font-weight: 700;
+}
+
+.card__footer--stats li p {
+  margin: 5px 0 0;
+  font-size: 0.6em;
+  letter-spacing: 0.15em;
+  color: #969696;
+}
+/*# sourceMappingURL=style.css.map */
