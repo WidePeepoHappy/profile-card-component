@@ -15,13 +15,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/images/bg-pattern-top.svg) left -59% top 200% no-repeat, url(/images/bg-pattern-bottom.svg) right -57% bottom 235% no-repeat, #19a2ae;
+  background: url(images/bg-pattern-top.svg) left -59% top 200% no-repeat, url(images/bg-pattern-bottom.svg) right -57% bottom 235% no-repeat, #19a2ae;
   background-size: 68%;
 }
 
 @media (max-width: 420px) {
   body {
-    background: url(/images/bg-pattern-top.svg) left 170% top -400% no-repeat, url(/images/bg-pattern-bottom.svg) right 170% bottom -390% no-repeat, #19a2ae;
+    background: url(images/bg-pattern-top.svg) left 170% top -400% no-repeat, url(images/bg-pattern-bottom.svg) right 170% bottom -390% no-repeat, #19a2ae;
     background-size: 160%;
   }
 }
@@ -36,7 +36,7 @@ body {
 }
 
 .card__header {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url(images/bg-pattern-card.svg);
   position: relative;
   height: 140px;
 }
