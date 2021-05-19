@@ -1,34 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-body {
+* {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 18px;
-  font-family: "Kumbh Sans", sans-serif;
-  color: #2d3248;
+}
+
+body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: url(/images/bg-pattern-top.svg) left -59% top 200% no-repeat, url(/images/bg-pattern-bottom.svg) right -57% bottom 235% no-repeat, #19a2ae;
-  background-size: 68%;
-}
-
-@media (max-width: 420px) {
-  body {
-    background: url(/images/bg-pattern-top.svg) left 170% top -400% no-repeat, url(/images/bg-pattern-bottom.svg) right 170% bottom -390% no-repeat, #19a2ae;
-    background-size: 160%;
-  }
+  height: 100vh;
+  font-size: 18px;
+  font-family: "Kumbh Sans", sans-serif;
+  color: #2d3248;
+  position: relative;
+  background: url(../images/bg-pattern-top.svg) right 49vw bottom 35vh no-repeat, url(../images/bg-pattern-bottom.svg) left 49vw top 43vh no-repeat, #19a2ae;
+  background-size: 130vh, 130vh;
 }
 
 .card {
   width: 350px;
   height: 375px;
+  z-index: 100;
   border-radius: 15px;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
@@ -36,7 +38,7 @@ body {
 }
 
 .card__header {
-  background-image: url(/images/bg-pattern-card.svg);
+  background-image: url(../images/bg-pattern-card.svg);
   position: relative;
   height: 140px;
 }
@@ -67,7 +69,7 @@ body {
 
 .card__section--city {
   color: #969696;
-  font-size: 0.9em;
+  font-size: 0.8em;
   margin: 10px 0;
 }
 
@@ -93,7 +95,7 @@ body {
 
 .card__footer--stats li p {
   margin: 5px 0 0;
-  font-size: 0.6em;
+  font-size: 0.5em;
   letter-spacing: 0.15em;
   color: #969696;
 }

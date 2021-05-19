@@ -1,36 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-body {
+* {
   box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
   color: hsl(229, 23%, 23%);
-  display: flex;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
-  background: url(/images/bg-pattern-top.svg) left -59% top 200% no-repeat,
-    url(/images/bg-pattern-bottom.svg) right -57% bottom 235% no-repeat,
-    hsl(185, 75%, 39%);
-  background-size: 68%;
+  position: relative;
 
-  @media (max-width: 420px) {
-    background: url(/images/bg-pattern-top.svg) left 170% top -400% no-repeat,
-      url(/images/bg-pattern-bottom.svg) right 170% bottom -390% no-repeat,
-      hsl(185, 75%, 39%);
-    background-size: 160%;
-  }
+  background: url(../images/bg-pattern-top.svg) right 49vw bottom 35vh no-repeat,
+    url(../images/bg-pattern-bottom.svg) left 49vw top 43vh no-repeat,
+    hsl(185, 75%, 39%);
+  background-size: 130vh, 130vh;
 }
 
 .card {
   width: 350px;
   height: 375px;
+  z-index: 100;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 1px 1px 30px 2px hsla(229, 23%, 23%, 0.3);
 
   &__header {
-    background-image: url(/images/bg-pattern-card.svg);
+    background-image: url(../images/bg-pattern-card.svg);
     position: relative;
     height: 140px;
     img {
@@ -56,7 +56,7 @@ body {
     }
     &--city {
       color: hsl(0, 0%, 59%);
-      font-size: 0.9em;
+      font-size: 0.8em;
       margin: 10px 0;
     }
   }
@@ -78,7 +78,7 @@ body {
 
       li p {
         margin: 5px 0 0;
-        font-size: 0.6em;
+        font-size: 0.5em;
         letter-spacing: 0.15em;
         color: hsl(0, 0%, 59%);
       }
