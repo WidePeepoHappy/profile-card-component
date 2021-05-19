@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -10,20 +10,21 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 100vh;
   font-size: 18px;
   font-family: "Kumbh Sans", sans-serif;
   color: #2d3248;
   position: relative;
-  background: url(../images/bg-pattern-top.svg) right 49vw bottom 35vh no-repeat, url(../images/bg-pattern-bottom.svg) left 49vw top 43vh no-repeat, #19a2ae;
+  background: url(../images/bg-pattern-top.svg) right 49vw bottom 35vh no-repeat,
+    url(../images/bg-pattern-bottom.svg) left 49vw top 43vh no-repeat, #19a2ae;
   background-size: 130vh, 130vh;
 }
 
@@ -34,7 +35,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
   -webkit-box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
-          box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
+  box-shadow: 1px 1px 30px 2px rgba(45, 50, 72, 0.3);
 }
 
 .card__header {
@@ -86,7 +87,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
 
 .card__footer--stats li span {
